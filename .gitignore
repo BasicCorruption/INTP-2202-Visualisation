@@ -1,0 +1,9 @@
+bin/
+export/
+
+.vscode/
+.idea/
+.eclipse/
+
+hxformat.json
+*.zip
