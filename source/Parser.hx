@@ -6,9 +6,14 @@ class Parser
 		return content.split("\n");
 	}
 	
-	public static function getArray(line:String)
+	public static function getValueArray(line:String)
 	{
 		return line.split(",");
+	}
+	
+	public static function getValueArrayFromFile(content:String, line:Int) {
+		var y = getLineArray(content);
+		return getValueArray(y[line]);
 	}
 
 	public static function getValueInLine(line:String, pos:Int)
