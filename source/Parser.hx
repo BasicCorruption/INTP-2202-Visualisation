@@ -2,6 +2,10 @@ package;
 
 class Parser
 {
+	public static function getLineArray(content:String) {
+		return content.split("\n");
+	}
+	
 	public static function getArray(line:String)
 	{
 		return line.split(",");
